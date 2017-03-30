@@ -4,26 +4,71 @@ body {
 }
 
 h1 {
-  font-family: 'Monofett', cursive;
+  font-family: 'Miniver', cursive;
+  margin-left: 20px;
+}
+
+#happycookie {
+  width: 200px;
+}
+
+.buttons{
+  text-align: center;
 }
 
 button {
-  font-family: 'Didact Gothic', sans-serif;
-  font-size: 20px;
-  margin: 10px;
+  font-family: 'Miniver', cursive;
+  font-size: 25px;
+  margin: 10px 80px 10px 80px;
+  border-radius: 12px;
+  background-color: #bff7ff;
+  border: none;
+  text-decoration: none;
+  padding: 10px;
 }
+
+button:focus {
+  outline:none;
+}
+
+button:hover {
+  background-color: #75eeff;
+}
+
+.counters {
+  text-align: center;
+  width: 100%;
+}
+
 
 #sugarcount {
   display: inline-block;
-
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 #chocolatecount{
   display: inline-block;
-
+  margin: 10px 350px 20px 350px;
 }
 
 #lemoncount{
   display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 
+#clear{
+  margin-top: 30px;
+  text-align: center;
+}
+
+#fulljar{
+  width: 80px;
+  position: absolute;
+}
+
+.crumble {
+  font-family: 'Miniver', cursive;
+  margin: 20px;
 }

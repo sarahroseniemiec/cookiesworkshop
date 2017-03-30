@@ -4,21 +4,32 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="food.png">
-    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Monofett" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Miniver" rel="stylesheet">
     <script type="text/javascript" src="cookies.min.js"></script>
     <title>cookies</title>
   </head>
   <body>
-    <h1>Pick your cookie:</h1>
-    <button id="sugarbutton" type="button" name="button">sugar cookie</button>
-    <button id="chocolatebutton" type="button" name="button">chocolate chip cookie</button>
-    <button id="lemonbutton" type="button" name="button">lemon cookie</button>
-    <button id="clearbutton" type="button" name="button">clear cookies</button>
+    <h1>Pick your cookies:</h1>
+    <img id="happycookie" src="happycookie.jpg" alt="happy cookie">
+    <div class="buttons">
+      <button id="sugarbutton" type="button" name="button">sugar cookie</button>
+      <button id="chocolatebutton" type="button" name="button">chocolate chip cookie</button>
+      <button id="lemonbutton" type="button" name="button">lemon cookie</button>
+    </div>
 
-    <div id="sugarcount"> </div>
-    <div id="chocolatecount"> </div>
-    <div id="lemoncount"></div>
+    <div class="counters">
+      <div id="sugarcount"> </div>
+      <div id="chocolatecount"> </div>
+      <div id="lemoncount"></div>
+    </div>
 
+
+    <div id="clear">
+      <img id="fulljar" src="emptyjar.png" alt="full cookie jar">
+      <button id="clearbutton" type="button" name="button">clear cookies</button>
+    </div>
+
+    <div class="crumble"> </div>
 
     <script type="text/javascript" src="main.js"></script>
   </body>

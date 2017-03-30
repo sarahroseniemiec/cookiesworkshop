@@ -8,7 +8,10 @@ document.addEventListener("DOMContentLoaded", function(){
   var sugarCount = document.querySelector("#sugarcount")
   var chocolateCount = document.querySelector("#chocolatecount")
   var lemonCount = document.querySelector("#lemoncount")
-
+  var crumbleSpot =
+  document.querySelector(".crumble")
+  var fullJar = document.querySelector("#fulljar")
+  console.log(fullJar)
 
   var sugarValue = Cookies.get("sugarcookie")
   sugarCount.innerHTML = sugarValue
@@ -28,6 +31,10 @@ document.addEventListener("DOMContentLoaded", function(){
     lemonCount.innerHTML = 0
   }
 
+  if (Cookies.get("sugarcookie") > 0 || Cookies.get("chocolatecookie") > 0 || Cookies.get("lemoncookie") > 0){
+    fullJar.src = "fulljar.png"
+  }
+
   sugarButton.addEventListener("click", function () {
     if (Cookies.get("sugarcookie")){
       var sugarValue = Cookies.get("sugarcookie")
@@ -38,8 +45,10 @@ document.addEventListener("DOMContentLoaded", function(){
       var sugarValue = Cookies.get("sugarcookie")
       sugarCount.innerHTML = sugarValue
     }
+    fullJar.src = "fulljar.png"
 
   })
+
 
   chocolateButton.addEventListener("click", function () {
     if (Cookies.get("chocolatecookie")){
@@ -51,9 +60,9 @@ document.addEventListener("DOMContentLoaded", function(){
       var chocolateValue = Cookies.get("chocolatecookie")
       chocolateCount.innerHTML = chocolateValue
     }
+    fullJar.src = "fulljar.png"
 
   })
-
 
   lemonButton.addEventListener("click", function () {
     if (Cookies.get("lemoncookie")){
@@ -65,9 +74,9 @@ document.addEventListener("DOMContentLoaded", function(){
       var lemonValue = Cookies.get("lemoncookie")
       lemonCount.innerHTML = lemonValue
     }
+    fullJar.src = "fulljar.png"
 
   })
-
 
   clearButton.addEventListener("click", function () {
     Cookies.expire("sugarcookie")
@@ -76,6 +85,9 @@ document.addEventListener("DOMContentLoaded", function(){
     chocolateCount.innerHTML = 0
     Cookies.expire("lemoncookie")
     lemonCount.innerHTML = 0
+    crumbleSpot.innerHTML = "...and that's the way the cookie crumbles!"
+    fullJar.src = "emptyjar.png"
+
 
   })
 
