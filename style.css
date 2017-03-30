@@ -1,0 +1,29 @@
+body {
+  font-family: 'Didact Gothic', sans-serif;
+  font-size: 40px;
+}
+
+h1 {
+  font-family: 'Monofett', cursive;
+}
+
+button {
+  font-family: 'Didact Gothic', sans-serif;
+  font-size: 20px;
+  margin: 10px;
+}
+
+#sugarcount {
+  display: inline-block;
+
+}
+
+#chocolatecount{
+  display: inline-block;
+
+}
+
+#lemoncount{
+  display: inline-block;
+
+}
