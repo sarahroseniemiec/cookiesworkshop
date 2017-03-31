@@ -5,11 +5,31 @@ body {
 
 h1 {
   font-family: 'Miniver', cursive;
+  margin-top: 10px;
   margin-left: 20px;
+  margin-bottom: 10px;
 }
 
 #happycookie {
-  width: 200px;
+  width: 100px;
+}
+
+.cookies {
+  text-align: center;
+}
+
+#sugar {
+  width: 300px;
+}
+
+#chocolate {
+  width:300px;
+  margin-left: 120px;
+  margin-right: 120px;
+}
+
+#lemon {
+  width: 300px;
 }
 
 .buttons{
@@ -19,7 +39,7 @@ h1 {
 button {
   font-family: 'Miniver', cursive;
   font-size: 25px;
-  margin: 10px 80px 10px 80px;
+  margin: 10px 115px 10px 115px;
   border-radius: 12px;
   background-color: #bff7ff;
   border: none;
@@ -49,7 +69,7 @@ button:hover {
 
 #chocolatecount{
   display: inline-block;
-  margin: 10px 350px 20px 350px;
+  margin: 20px 415px 20px 415px;
 }
 
 #lemoncount{
